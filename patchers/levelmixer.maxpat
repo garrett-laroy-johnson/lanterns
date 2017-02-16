@@ -38,6 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 496.0, 688.0, 137.0, 22.0 ],
+					"restore" : 					{
+						"radiogroup" : [ 0, 0, 1, 1, 0, 0, 1, 1 ],
+						"slider" : [ 0.0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr @autoname 1",
+					"varname" : "u118012545"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -266,7 +285,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 2.0, 20.0, 162.0 ],
 					"size" : 1.0,
-					"style" : ""
+					"style" : "",
+					"varname" : "slider"
 				}
 
 			}
@@ -285,7 +305,8 @@
 					"presentation_rect" : [ 23.0, 2.0, 19.0, 130.0 ],
 					"size" : 8,
 					"style" : "",
-					"values" : [ 0, 0, 1, 1, 0, 0, 1, 1 ]
+					"values" : [ 0, 0, 1, 1, 0, 0, 1, 1 ],
+					"varname" : "radiogroup"
 				}
 
 			}

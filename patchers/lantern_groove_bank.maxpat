@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -3932.0, 221.0, 863.0, 162.0 ],
+		"rect" : [ -1105.0, 309.0, 1166.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-74",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -94,7 +93,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-62",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -147,7 +145,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -161,7 +158,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -658,7 +654,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 963.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 717.312622, 0.0, 146.687393, 599.0 ],
+					"presentation_rect" : [ 716.312622, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer",
 					"viewvisibility" : 1
 				}
 
@@ -682,6 +679,7 @@
 					"patching_rect" : [ 777.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 573.685547, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer[1]",
 					"viewvisibility" : 1
 				}
 
@@ -705,6 +703,7 @@
 					"patching_rect" : [ 591.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 430.058502, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer[2]",
 					"viewvisibility" : 1
 				}
 
@@ -728,6 +727,7 @@
 					"patching_rect" : [ 405.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 287.25412, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer[3]",
 					"viewvisibility" : 1
 				}
 
@@ -751,6 +751,7 @@
 					"patching_rect" : [ 219.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 144.62706, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer[4]",
 					"viewvisibility" : 1
 				}
 
@@ -787,6 +788,7 @@
 					"patching_rect" : [ 33.0, 215.0, 172.0, 182.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 0.0, 146.687393, 599.0 ],
+					"varname" : "levelmixer[5]",
 					"viewvisibility" : 1
 				}
 
@@ -1450,6 +1452,28 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "lantern_speed_groove.maxpat",
+				"bootpath" : "~/lanterns/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "levelmixer.maxpat",
+				"bootpath" : "~/lanterns/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.atomize.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
