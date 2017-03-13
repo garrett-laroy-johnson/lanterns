@@ -1,0 +1,65 @@
+{
+	"pattrstorage" : 	{
+		"name" : "storage",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "TESTING_pfzzzz",
+				"data" : 				{
+					"dmx::slider" : [ 254 ],
+					"dmx::slider[1]" : [ 254 ],
+					"dmx::slider[2]" : [ 254 ],
+					"dmx::slider[3]" : [ 254 ],
+					"dmx::slider[4]" : [ 254 ],
+					"dmx::slider[5]" : [ 254 ],
+					"dmx::slider[6]" : [ 254 ],
+					"dmx::slider[7]" : [ 254 ],
+					"dmx::glj.lantern_light_master::slider" : [  ],
+					"dmx::glj.lantern_light_master::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[1]::slider" : [  ],
+					"dmx::glj.lantern_light_master[1]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[2]::slider" : [  ],
+					"dmx::glj.lantern_light_master[2]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[3]::slider" : [  ],
+					"dmx::glj.lantern_light_master[3]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[4]::slider" : [  ],
+					"dmx::glj.lantern_light_master[4]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[5]::slider" : [  ],
+					"dmx::glj.lantern_light_master[5]::slider[1]" : [  ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"name" : "TEASING_out",
+				"data" : 				{
+					"dmx::slider" : [ 254 ],
+					"dmx::slider[1]" : [ 254 ],
+					"dmx::slider[2]" : [ 254 ],
+					"dmx::slider[3]" : [ 254 ],
+					"dmx::slider[4]" : [ 254 ],
+					"dmx::slider[5]" : [ 254 ],
+					"dmx::slider[6]" : [ 254 ],
+					"dmx::slider[7]" : [ 254 ],
+					"dmx::glj.lantern_light_master::slider" : [  ],
+					"dmx::glj.lantern_light_master::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[1]::slider" : [  ],
+					"dmx::glj.lantern_light_master[1]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[2]::slider" : [  ],
+					"dmx::glj.lantern_light_master[2]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[3]::slider" : [  ],
+					"dmx::glj.lantern_light_master[3]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[4]::slider" : [  ],
+					"dmx::glj.lantern_light_master[4]::slider[1]" : [  ],
+					"dmx::glj.lantern_light_master[5]::slider" : [  ],
+					"dmx::glj.lantern_light_master[5]::slider[1]" : [  ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
