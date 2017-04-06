@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 3,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 464.0, 70.0, 1170.0, 581.0 ],
+		"rect" : [ 236.0, 70.0, 1170.0, 581.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,8 +43,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.0, 46.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 278.0, 46.0, 192.0, 22.0 ],
+					"style" : "",
+					"text" : "FullPacket 160 2042448576"
 				}
 
 			}
@@ -148,7 +149,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 578.0, 300.0, 50.0, 35.0 ],
 					"style" : "",
-					"text" : "-0.057692"
+					"text" : "-0.048077"
 				}
 
 			}
@@ -161,7 +162,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 902.0, 272.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "-0.085106"
+					"text" : "-0.095745"
 				}
 
 			}
@@ -561,11 +562,11 @@
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "FullPacket" ],
-					"patching_rect" : [ 29.0, 106.0, 161.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "FullPacket" ],
+					"patching_rect" : [ 29.0, 106.0, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /speed /acc /position"
+					"text" : "o.route /speed /acc"
 				}
 
 			}
@@ -1163,8 +1164,8 @@
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
