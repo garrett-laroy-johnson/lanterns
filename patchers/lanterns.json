@@ -1,0 +1,19 @@
+{
+	"pattrstorage" : 	{
+		"name" : "lanterns",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"name" : "default",
+				"data" : 				{
+					"dmx::warm" : [  ],
+					"dmx::cold" : [  ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

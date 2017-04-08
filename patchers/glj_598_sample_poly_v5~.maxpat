@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -46,7 +46,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 120.0, 210.0, 50.0, 52.0 ],
 					"style" : "",
-					"text" : "set 2_lantern.1"
+					"text" : "set 1_lantern.1"
 				}
 
 			}
@@ -60,10 +60,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 190.0, 158.0, 39.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -104,6 +100,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 420.0, 377.0, 47.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -224,10 +224,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 364.5, 117.0, 31.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -257,6 +253,7 @@
 					"destination" : [ "obj-14", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -266,6 +263,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -285,6 +283,7 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -294,6 +293,7 @@
 					"destination" : [ "obj-60", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
