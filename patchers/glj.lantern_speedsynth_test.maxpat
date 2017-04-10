@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 88.0, 184.0, 354.0, 229.0 ],
+		"rect" : [ 120.0, 101.0, 1194.0, 676.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,42 +38,97 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 201.0, 3.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 270.5, 5.0, 79.0, 20.0 ],
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 618.0, 285.0, 35.0, 22.0 ],
 					"style" : "",
-					"text" : "timestretch v"
+					"text" : "== 0"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-47",
+					"id" : "obj-24",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 618.0, 316.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 189.0, 192.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-26",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.0, 401.0, 50.0, 22.0 ],
+					"patching_rect" : [ 618.0, 341.0, 68.0, 23.0 ],
 					"style" : "",
-					"text" : "0"
+					"text" : "mute 0 $1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-37",
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 153.0, 336.5, 105.0, 22.0 ],
+					"style" : "",
+					"text" : "scale 0. 10. 0. 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
 					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1384.0, 357.0, 50.0, 35.0 ],
+					"patching_rect" : [ 336.0, 446.5, 50.0, 35.0 ],
 					"style" : "",
-					"text" : "1 1 1 1 0 1 1 1"
+					"text" : "0.012405"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "float", "int", "int" ],
+					"patching_rect" : [ 317.0, 400.5, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "peak 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1270.0, 82.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 270.5, 5.0, 79.0, 20.0 ],
+					"style" : "",
+					"text" : "timestretch v"
 				}
 
 			}
@@ -84,34 +139,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1197.0, 45.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1318.5, 109.5, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-28",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1133.0, 602.0, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "8 8 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1196.0, 691.0, 34.0, 22.0 ],
-					"style" : "",
-					"text" : "print"
 				}
 
 			}
@@ -151,102 +181,6 @@
 					"patching_rect" : [ 1044.0, 509.0, 111.0, 22.0 ],
 					"style" : "",
 					"text" : "target $1, $1 $2 $3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-46",
-					"linecount" : 3,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 509.0, 521.0, 62.0, 49.0 ],
-					"style" : "",
-					"text" : "0.517284 0.761168 0.079083"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"linecount" : 8,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 485.0, 18.0, 116.0 ],
-					"style" : "",
-					"text" : "0.079083"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 242.0, 454.0, 50.0, 35.0 ],
-					"style" : "",
-					"text" : "0.761168"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 106.0, 468.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "0.517284"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 300.0, 288.0, 60.0, 35.0 ],
-					"style" : "",
-					"text" : "19.592337"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 200.0, 215.0, 60.0, 35.0 ],
-					"style" : "",
-					"text" : "19.592337"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 391.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "0.783693"
 				}
 
 			}
@@ -436,20 +370,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1399.0, 300.5, 50.0, 35.0 ],
-					"style" : "",
-					"text" : "1 1 1 1 0 1 1 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"disabled" : [ 0, 0, 0, 0, 0, 0, 0, 0 ],
 					"id" : "obj-23",
 					"itemtype" : 1,
@@ -464,14 +384,14 @@
 					"presentation_rect" : [ 331.5, 31.5, 18.0, 194.0 ],
 					"size" : 8,
 					"style" : "",
-					"values" : [ 1, 1, 1, 1, 0, 1, 1, 1 ]
+					"values" : [ 1, 1, 1, 1, 1, 1, 1, 1 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -487,7 +407,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -516,7 +436,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -532,7 +452,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -548,7 +468,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -564,7 +484,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -580,7 +500,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -603,14 +523,14 @@
 					"patching_rect" : [ 30.5, 653.0, 128.0, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u789003935"
+					"varname" : "u447010690"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
+					"items" : [ "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS", ",", "CONTACT MIC XMAS 2012.01 VHS Deck Tortured 1", ",", "CONTACT MIC XMAS 2012.13 Rice Cooker Bowl Bowed", ",", "HMRhyBChug-C", ",", "prayer bowl Bb", ",", "PRESSURE Ambience air through pipe 1", ",", "PRESSURE Compressor air 10 pipe 8", ",", "PRESSURE Compressor air sweeps long", ",", "PRESSURE Train steam release multiple 05", ",", "PRESSURE Truck air foot brake Hino", ",", "PRESSURE Truck air foot brake International", ",", "SWISH 01 Bamboo single FREE", ",", "SWISH 02 Bamboo fast FREE", ",", "SWISH 03 Bamboo slow FREE", ",", "SWISH 05 Bamboo cloth FREE", ",", "SWISH 06 Bamboo gaffer tape FREE", ",", "SWISH 07 Bamboo plastic big FREE", ",", "SWISH 08 Bamboo plastic small FREE", ",", "SWISH 09 Broom straw FREE", ",", "SWISH 10 Cable audio FREE", ",", "SWISH 11 Cable firewire FREE", ",", "SWISH 12 Cable jug FREE", ",", "SWISH 13 Cable jug prongs FREE", ",", "SWISH 15 Conduit thin FREE", ",", "SWISH 16 Cord Bungy FREE", ",", "SWISH 17 Cord Bungy multiple FREE", ",", "WOOD CREAKS TP FREE", ",", "WOOD SCRAPES thin metal strip TP FREE", ",", "wood-cracking-1", ",", "wood-cracking-2", ",", "WOOD_CREAKS", ",", "WOOD_hits_big", ",", "WOODSCRAPES", ",", "WOODSHRIEKS" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -630,7 +550,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 822.0, 612.0, 186.0, 22.0 ],
+					"patching_rect" : [ 1015.0, 550.0, 186.0, 22.0 ],
 					"style" : "",
 					"text" : "voice, sample index, pitch locked"
 				}
@@ -716,19 +636,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.0, 372.0, 62.0, 22.0 ],
-					"style" : "",
-					"text" : "clip 0. 10."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-12",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -786,9 +693,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 431.5, 359.0, 112.0, 22.0 ],
+					"patching_rect" : [ 431.5, 359.0, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 10. 57. 0. 0.5"
+					"text" : "scale 0. 57. 0. 0.5"
 				}
 
 			}
@@ -799,7 +706,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 236.0, 331.0, 124.0, 33.0 ],
+					"patching_rect" : [ 269.0, 348.0, 124.0, 33.0 ],
 					"style" : "",
 					"text" : "playback-speed envelope "
 				}
@@ -822,11 +729,11 @@
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 31.0, 252.0, 820.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "FullPacket" ],
+					"patching_rect" : [ 31.0, 252.0, 832.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /speed /acc"
+					"text" : "o.route /speed /acc /power"
 				}
 
 			}
@@ -862,7 +769,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 30.5, 585.0, 968.0, 22.0 ],
+					"patching_rect" : [ 30.5, 589.0, 968.0, 22.0 ],
 					"style" : "",
 					"text" : "poly~ glj.poly_speed_test~ 8 @target 0"
 				}
@@ -888,9 +795,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 318.0, 99.0, 22.0 ],
+					"patching_rect" : [ 31.0, 319.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 0. 25. 0. 1."
+					"text" : "scale 0. 10. 0. 1."
 				}
 
 			}
@@ -923,15 +830,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -954,24 +852,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-119", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-119", 0 ]
 				}
 
 			}
@@ -1013,6 +893,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-15", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1026,15 +915,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -1070,6 +950,7 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 6,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1079,6 +960,7 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 5,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1088,6 +970,7 @@
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 4,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1097,6 +980,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 3,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1106,6 +990,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 2,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1115,6 +1000,7 @@
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1124,6 +1010,7 @@
 					"destination" : [ "obj-21", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1133,6 +1020,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 7,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1157,33 +1045,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-62", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1193,18 +1054,47 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-167", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-119", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 1 ],
+					"destination" : [ "obj-52", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -1265,15 +1155,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1319,10 +1200,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 1 ],
+					"destination" : [ "obj-35", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-48", 0 ]
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1346,19 +1227,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
+					"destination" : [ "obj-42", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-50", 0 ]
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-107", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-51", 0 ]
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -1424,24 +1305,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-62", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-63", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-63", 0 ]
 				}
 
 			}
@@ -1526,15 +1389,6 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "glj.poly_speed_test~.maxpat",
@@ -1551,8 +1405,8 @@
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
