@@ -43,22 +43,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 221.0, 280.0, 45.0, 22.0 ],
+					"patching_rect" : [ 52.0, 100.0, 45.0, 22.0 ],
 					"style" : "",
 					"text" : "zl.sum"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 243.0, 88.0, 22.0 ],
-					"style" : "",
-					"text" : "vexpr $f1 * $f1"
 				}
 
 			}
@@ -69,9 +56,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.0, 206.0, 89.0, 22.0 ],
+					"patching_rect" : [ 52.0, 68.0, 145.0, 22.0 ],
 					"style" : "",
-					"text" : "vexpr ($f1-$f2)"
+					"text" : "vexpr ($f1-$f2) * ($f1-$f2)"
 				}
 
 			}
@@ -83,8 +70,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 131.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 327.0, 133.0, 0.0, 0.0 ],
+					"patching_rect" : [ 178.0, 25.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -96,7 +82,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 315.0, 30.0, 30.0 ],
+					"patching_rect" : [ 52.0, 135.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -109,7 +95,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.0, 131.0, 30.0, 30.0 ],
+					"patching_rect" : [ 52.0, 21.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -126,7 +112,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
@@ -144,15 +130,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -161,8 +138,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
