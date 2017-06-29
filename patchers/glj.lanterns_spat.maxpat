@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 2,
 			"revision" : 5,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 84.0, 128.0, 1034.0, 690.0 ],
+		"rect" : [ 178.0, 319.0, 428.0, 432.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -246,7 +246,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -323,7 +323,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -1898,7 +1898,7 @@
 									"destination" : [ "obj-11", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 445.833333, 76.0, 71.5, 76.0 ],
+									"midpoints" : [ 445.833344, 76.0, 71.5, 76.0 ],
 									"source" : [ "obj-3", 2 ]
 								}
 
@@ -1908,7 +1908,7 @@
 									"destination" : [ "obj-12", 0 ],
 									"disabled" : 0,
 									"hidden" : 1,
-									"midpoints" : [ 434.166667, 76.0, 71.5, 76.0 ],
+									"midpoints" : [ 434.166656, 76.0, 71.5, 76.0 ],
 									"source" : [ "obj-3", 1 ]
 								}
 
@@ -2166,7 +2166,7 @@
 						"aed_scale" : 1.0,
 						"coord_angles" : 0,
 						"coord_system" : 0,
-						"gain" : 0.039317,
+						"gain" : 0.06,
 						"order" : 3,
 						"orderweight" : [ 1.0, 0.6, 0.2, 0.028571 ],
 						"type" : 1,
@@ -2207,7 +2207,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2313,7 +2313,7 @@
 											"major" : 7,
 											"minor" : 2,
 											"revision" : 5,
-											"architecture" : "x64",
+											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
@@ -3864,7 +3864,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 262.0, 124.5, 75.0, 22.0 ],
+					"patching_rect" : [ 262.0, 124.5, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "setsize 0 #1"
 				}
@@ -3935,12 +3935,12 @@
 					"maxclass" : "nodes",
 					"nodecolor" : [ 0.376471, 0.384314, 0.4, 0.35 ],
 					"nodenumber" : 6,
-					"nsize" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"nsize" : [ 0.3, 0.3, 0.3, 0.3, 0.3, 0.3 ],
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 48.0, 170.399994, 314.0, 314.0 ],
+					"patching_rect" : [ 111.0, 174.399994, 314.0, 314.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.0, 10.0, 314.0, 314.0 ],
 					"style" : "",
@@ -3979,7 +3979,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4351,7 +4351,7 @@
 							"major" : 7,
 							"minor" : 2,
 							"revision" : 5,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -4574,7 +4574,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 48.0, 170.399994, 314.0, 314.0 ],
+					"patching_rect" : [ 50.0, 170.399994, 314.0, 314.0 ],
 					"point_color" : [ 0.360784, 0.341176, 0.321569, 1.0 ],
 					"point_color1" : [ 0.74902, 0.0, 0.0, 1.0 ],
 					"point_color2" : [ 0.0, 0.74902, 0.0, 1.0 ],
@@ -5340,46 +5340,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "glj.trakspat.maxpat",
-				"bootpath" : "~/lanterns/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "glj.lantern_sources.maxpat",
-				"bootpath" : "~/lanterns/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "glj.lantern_soundreceive.maxpat",
-				"bootpath" : "~/lanterns/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ambimonitor.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ambiencode~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ambidecode~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
